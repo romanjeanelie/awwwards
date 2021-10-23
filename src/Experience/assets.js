@@ -5,6 +5,7 @@ export default [
     items: [
       { name: "lennaTexture", source: "/assets/lenna.png", type: "texture" },
       { name: "character", source: "/assets/character.glb" },
+      { name: "landscape", source: "/assets/landscape.gltf" },
     ],
   },
 ];

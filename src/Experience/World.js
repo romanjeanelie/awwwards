@@ -28,7 +28,6 @@ export default class World {
 
   setLight() {
     this.lights = new Lights();
-    console.log(this.lights);
   }
 
   setLandscape() {
@@ -41,7 +40,14 @@ export default class World {
 
   resize() {}
 
-  update() {}
+  update() {
+    if (this.lights) {
+      this.lights.update();
+    }
+    if (this.landscape) {
+      this.landscape.update();
+    }
+  }
 
   destroy() {}
 }
